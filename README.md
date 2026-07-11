@@ -158,6 +158,11 @@
    /http://user:password@127.0.0.1:8080 (默认激活全局SOCKS5)
    ```
 
+- 指定 `Trojan fallback` 案例（由于使用场景为自建对接, 仅 Trojan 入站，fallback 服务需为同密码、非 WebSocket、非 TLS. 此时 UDP 透传给 fallback, 性能优秀, 功能完整）
+   ```url
+   /trojan=1.1.1.1:1234
+   ```
+
 ---
 
 ## 💻 客户端适配情况
